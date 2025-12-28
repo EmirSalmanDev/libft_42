@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: esalman <esalman@student.42istanbul.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/12/28 13:44:15 by esalman           #+#    #+#             */
+/*   Updated: 2025/12/28 14:28:29 by esalman          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
 ** Handles memory overlap:
 ** If the destination is after the source (dst > src), we copy from end to start
@@ -27,9 +39,9 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	i = 0;
 	d = (unsigned char *)dst;
 	s = (const unsigned char *)src;
-	if (!dst && !src)
-		return (0);
-	if (dst > src)
+	if (d == s || len == 0)
+		return (dst);
+	if (d > s)
 	{
 		while (len > 0)
 		{

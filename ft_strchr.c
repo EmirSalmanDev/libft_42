@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: esalman <esalman@student.42istanbul.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/12/28 13:44:23 by esalman           #+#    #+#             */
+/*   Updated: 2025/12/28 13:45:58 by esalman          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
  ** NOTE ON TYPE CASTING:
 	** 1. Incoming Parameter (const char *s):
@@ -14,7 +26,7 @@
 	** tell the compiler to discard the 'const' qualifier and bridge this gap.
 
 ** NOTE ON PARAMETER 'c' CASTING:
-	** The function prototype receives 'c' as an 'int' due to historical C reasons.
+** The function prototype receives 'c' as an 'int' due to historical C reasons.
 	** However, we are searching for this value inside a 'char' string.
 	** The standard requires 'c' to be converted to a character type before
 	** comparison. This casting ensures that we treat the integer input as a
@@ -33,11 +45,10 @@ char	*ft_strchr(const char *s, int c)
 	while (s[i] != '\0')
 	{
 		if (casted_c == s[i])
-			// Cast to remove const qualifier matching the return type
 			return ((char *)&s[i]);
 		i++;
 	}
-	if (casted_c == s[i]) // '\0'
+	if (casted_c == s[i])
 		return ((char *)&s[i]);
 	return (0);
 }
