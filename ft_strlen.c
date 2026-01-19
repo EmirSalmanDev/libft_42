@@ -6,11 +6,11 @@
 /*   By: esalman <esalman@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/28 13:44:36 by esalman           #+#    #+#             */
-/*   Updated: 2025/12/28 14:02:59 by esalman          ###   ########.fr       */
+/*   Updated: 2026/01/19 13:05:13 by esalman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {

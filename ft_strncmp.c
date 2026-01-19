@@ -6,11 +6,11 @@
 /*   By: esalman <esalman@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/28 13:44:38 by esalman           #+#    #+#             */
-/*   Updated: 2025/12/28 13:44:39 by esalman          ###   ########.fr       */
+/*   Updated: 2026/01/19 13:05:19 by esalman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

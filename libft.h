@@ -6,7 +6,7 @@
 /*   By: esalman <esalman@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/28 13:48:10 by esalman           #+#    #+#             */
-/*   Updated: 2026/01/08 20:13:19 by esalman          ###   ########.fr       */
+/*   Updated: 2026/01/19 13:21:38 by esalman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
+void	ft_putchar_fd(char c, int fd);
 
 /* String */
 size_t	ft_strlen(const char *s);
@@ -41,6 +42,8 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
 
 /* Memory */
 void	*ft_memset(void *b, int c, size_t len);
@@ -50,8 +53,10 @@ void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_calloc(size_t nmemb, size_t size);
-char	*ft_itoa(int n);
 
+/* Number */
+void	ft_putnbr_fd(int n, int fd);
 int		ft_atoi(const char *str);
+char	*ft_itoa(int n);
 
 #endif

@@ -6,11 +6,11 @@
 /*   By: esalman <esalman@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/28 13:44:13 by esalman           #+#    #+#             */
-/*   Updated: 2025/12/28 13:44:13 by esalman          ###   ########.fr       */
+/*   Updated: 2026/01/19 13:04:42 by esalman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {

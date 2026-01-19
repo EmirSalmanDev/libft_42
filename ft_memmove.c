@@ -6,7 +6,7 @@
 /*   By: esalman <esalman@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/28 13:44:15 by esalman           #+#    #+#             */
-/*   Updated: 2025/12/28 14:28:29 by esalman          ###   ########.fr       */
+/*   Updated: 2026/01/19 13:50:25 by esalman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@
 ** until it is needed.
 */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
@@ -43,17 +43,18 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		return (dst);
 	if (d > s)
 	{
-		while (len > 0)
-		{
-			d[len - 1] = s[len - 1];
-			len--;
-		}
-		return (dst);
+		i = len;
+		while (i-- > 0)
+			d[i] = s[i];
 	}
-	while (i < len)
+	else
 	{
-		d[i] = s[i];
-		i++;
+		i = 0;
+		while (i < len)
+		{
+			d[i] = s[i];
+			i++;
+		}
 	}
 	return (dst);
 }
