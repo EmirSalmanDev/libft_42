@@ -6,13 +6,13 @@
 /*   By: esalman <esalman@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 15:00:39 by esalman           #+#    #+#             */
-/*   Updated: 2026/01/08 15:03:20 by esalman          ###   ########.fr       */
+/*   Updated: 2026/01/23 23:53:40 by esalman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count_length(int n)
+static int	count_length(int n)
 {
 	int		length;
 	long	nbr;

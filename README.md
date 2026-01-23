@@ -80,6 +80,7 @@ AI tools were used **only as a learning aid**, specifically for:
 * Understanding concepts and function behavior
 * Clarifying edge cases
 * Writing example test cases
+* Organizing Readme.md
 
 **AI was not used to generate or write any source code in this project.**
 

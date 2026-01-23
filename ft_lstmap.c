@@ -6,14 +6,11 @@
 /*   By: esalman <esalman@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 12:47:41 by esalman           #+#    #+#             */
-/*   Updated: 2026/01/23 23:28:08 by esalman          ###   ########.fr       */
+/*   Updated: 2026/01/24 00:01:20 by esalman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// void	ft_lstadd_back(t_list **lst, t_list *new)
-// t_list	*ft_lstnew(void *content)
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {

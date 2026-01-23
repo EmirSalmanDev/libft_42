@@ -6,13 +6,13 @@
 /*   By: esalman <esalman@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/28 15:58:06 by esalman           #+#    #+#             */
-/*   Updated: 2025/12/28 15:58:27 by esalman          ###   ########.fr       */
+/*   Updated: 2026/01/23 23:52:59 by esalman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	is_set(char c, char const *set)
+static int	is_set(char c, char const *set)
 {
 	size_t	i;
 

@@ -6,34 +6,9 @@
 /*   By: esalman <esalman@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/28 13:44:23 by esalman           #+#    #+#             */
-/*   Updated: 2025/12/28 13:45:58 by esalman          ###   ########.fr       */
+/*   Updated: 2026/01/23 23:45:48 by esalman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
- ** NOTE ON TYPE CASTING:
-	** 1. Incoming Parameter (const char *s):
-	** This pointer is "Read-Only". It points to an address where data cannot be
-	** modified. Therefore, the expression &s[i] is naturally (const char *).
-	**
-	** 2. Return Type (char *):
-	** The function prototype requires a "Read-Write" pointer. This implies that
-	** the caller might want to modify the data at the returned address later.
-	**
-	** 3. The Conflict & Resolution:
-	** Returning &s[i] directly would violate the 'const' promise (returning a
-	** read-only address as read-write). We use the (char *) cast to explicitly
-	** tell the compiler to discard the 'const' qualifier and bridge this gap.
-
-** NOTE ON PARAMETER 'c' CASTING:
-** The function prototype receives 'c' as an 'int' due to historical C reasons.
-	** However, we are searching for this value inside a 'char' string.
-	** The standard requires 'c' to be converted to a character type before
-	** comparison. This casting ensures that we treat the integer input as a
-	** single byte (character) and ignore any high-order bits, matching the
-	** data type of the string elements we are comparing against.
-
-*/
 
 char	*ft_strchr(const char *s, int c)
 {
