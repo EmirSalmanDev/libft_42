@@ -6,27 +6,9 @@
 /*   By: esalman <esalman@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/28 13:44:15 by esalman           #+#    #+#             */
-/*   Updated: 2026/01/19 13:50:25 by esalman          ###   ########.fr       */
+/*   Updated: 2026/01/24 01:17:56 by esalman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** Handles memory overlap:
-** If the destination is after the source (dst > src), we copy from end to start
-** to avoid overwriting data that hasn't been copied yet.
-
-** Overlap Example:
-** Data: [1, 2, 3, 4, 5, 6], src at '1', dst at '2', len = 3.
-**
-** Forward Copy (WRONG):
-** 1. dst[0] = src[0] -> [1, 1, 3, 4, 5, 6] ('2' is overwritten by '1')
-** 2. dst[1] = src[1] -> Reads the NEW '1', writes '1' -> [1, 1, 1, 4...]
-** Result: Data corruption.
-**
-** Backward Copy (CORRECT):
-** Copy starts from the end (src[2] to dst[2]), preserving src[1] ('2')
-** until it is needed.
-*/
 
 #include "libft.h"
 
