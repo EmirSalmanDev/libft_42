@@ -89,9 +89,8 @@ This usage fully complies with the 42 AI guidelines and focuses on reinforcing u
 ## Resources
 
 * `man` pages (e.g., `man strlen`, `man memcpy`)
-* The GNU C Library documentation
 * 42 Intranet Libft subject PDF
-* BSD libc documentation for `strlcpy` and `strlcat`
+* Youtube
 
 ## Notes
 
