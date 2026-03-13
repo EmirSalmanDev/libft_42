@@ -8,11 +8,20 @@ _This project has been created as part of the 42 curriculum by esalman._
   <h1>LIBFT</h1>
 
   <p>
-    <b
+    <b>Reimplementation of essential C standard library functions.</b>
+  </p>
 
-> Reimplementation of essential C standard library functions.
+  <p>
+    <a href="https://github.com/EmirSalmanDev/libft">
+      <img src="https://img.shields.io/badge/Language-C-blue?style=for-the-badge&logo=c" alt="C Language">
+    </a>
+    <a href="#">
+      <img src="https://img.shields.io/badge/Score-125%2F100-success?style=for-the-badge" alt="Score">
+    </a>
+  </p>
+</div>
 
-Libft is a foundational project that focuses on recreating commonly used C library functions from scratch. The goal is to deeply understand memory management, string manipulation, and data structures while building a reusable static library for future projects.
+---
 
 ## Description
 
