@@ -1,7 +1,7 @@
 _This project has been created as part of the 42 curriculum by esalman._
 
 <div align="center">
-  <a href="https://github.com/EmirSalmanDev/libft">
+  <a href="https://github.com/EmirSalmanDev/libft_42">
     <img src="https://github.com/ayogun/42-project-badges/blob/main/badges/libftm.png" alt="LIBFT Logo" width="200">
   </a>
 
